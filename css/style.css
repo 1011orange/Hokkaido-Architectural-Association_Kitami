@@ -46,6 +46,17 @@ header {
    color: #146c94;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news h2 {
+    margin-top: 30px;
+    color: #000000;
+    border-bottom: 3px solid #146C94;
+}
+
 
 /* TOP スライドショー画像 */
 .top-img-container {
