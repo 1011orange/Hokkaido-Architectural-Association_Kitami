@@ -1,54 +1,106 @@
 * {
    box-sizing: border-box;
- }
+}
+
+/* html全体のレイアウト */
+body {
+   height: 100%;
+   padding: 0;
+   margin: 0;
+   background-color: #ffffff;
+   font-family: 'Noto Sans JP', sans-serif;
+}
 
 header {
-    display: flex;
-    width: 100%;
-    height: 65px;
-    background-color: #146C94;
-    align-items: center;
-    justify-content:space-between;
-    color: black;
- }
+   display: flex;
+   width: 100%;
+   height: 65px;
+   background-color: #146C94;
+   align-items: center;
+   justify-content: space-between;
+   color: black;
+}
 
- .title img {
-    height: 55px;
-    display: flex;
-    margin-left: 5px;
- }
+.title img {
+   height: 55px;
+   display: flex;
+   margin-left: 5px;
+}
 
-.header-right {
-    list-style: none;
-    display: inline-block;
- }
+.top-nav {
+   list-style: none;
+   display: inline-block;
+}
 
-.header-right a {
-    line-height: 65px;
-    padding: 0 20px;
-    color: #F6F1F1;
-    display: block;
-    text-decoration: none;
-    transition: all 0.4s;
- }
+.top-nav a {
+   line-height: 65px;
+   padding: 0 20px;
+   color: #F6F1F1;
+   display: block;
+   text-decoration: none;
+   transition: all 0.4s;
+}
 
-.header-right a:hover {
-    background-color: rgba(246, 241, 241, 0.9);
-    color: #146c94;
- }
+.top-nav a:hover {
+   background-color: rgba(246, 241, 241, 0.9);
+   color: #146c94;
+}
 
- .top-container {
-   margin: 20px 20px;
- }
 
-.top-img img {
-   width: 50%;
-   float: left;
-   padding: 20px 20px 0px 20px;
- }
+/* TOP スライドショー画像 */
+.top-img-container {
+   align-items: flex-end;
+}
 
-.top-small-img img {
-   width: 25%;
-   float: left;
-   padding: 20px 20px 20px 20px;
- }
+.slider {
+   position: relative;
+   z-index: 1;
+   height: 90vh; /* 画像の高さ */
+   margin: 0;
+   padding: 0;
+}
+
+/* 画像設定 */
+.slider-item01 {
+   background-image: url(../img/hakka_memorial-museum.jpg);
+}
+.slider-item02 {
+   background: url(../img/kunnneppu_town-hall.JPG);
+}
+.slider-item03 {
+   background: url(../img/oketo_town-hall.jpg);
+}
+.slider-item04 {
+   background: url(../img/piason_memorial-hall.jpg);
+}
+.slider-item05 {
+   background: url(../img/hakka_memorial-museum.jpg);
+}
+
+.slider-item {
+   width: 100%;
+   height: 90vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.slick-prev,
+.slick-next {
+    position: absolute;
+	z-index: 3;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    height: 25px;
+    width: 25px;
+}
+.slick-prev {
+    left:2.5%;
+    transform: rotate(-135deg);
+}
+.slick-next {
+    right:2.5%;
+    transform: rotate(45deg);
+}
