@@ -8,7 +8,7 @@ body {
    padding: 0;
    margin: 0;
    background-color: #ffffff;
-   font-family: 'Noto Sans JP', sans-serif;
+   font-family: "Zen Kaku Gothic New",'Noto Sans JP', sans-serif;
 }
 
 header {
@@ -27,9 +27,12 @@ header {
    margin-left: 5px;
 }
 
+.top-ul {
+   display: flex;
+}
+
 .top-nav {
    list-style: none;
-   display: inline-block;
 }
 
 .top-nav a {
@@ -47,14 +50,50 @@ header {
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    max-width: 1280px;
+    margin: 0 20%;
+}
+
+.news {
+   width: 800px;
 }
 
 .news h2 {
     margin-top: 30px;
     color: #000000;
     border-bottom: 3px solid #146C94;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 2px solid #AFD3E2;
+    display: inline-block;
+    width: 700px;
+}
+
+.news-text {
+   display: inline-block;
+   vertical-align: top;
+   width: 300px;
+}
+
+.news-img {
+    display: inline-block;
+}
+
+.news-item img {
+   width: 160px;
+   height: 120px;
+   margin-right: 0;
+   margin-left: auto;
+   vertical-align: bottom;
 }
 
 
@@ -73,7 +112,7 @@ header {
 
 /* 画像設定 */
 .slider-item01 {
-   background-image: url(../img/hakka_memorial-museum.jpg);
+   background: url(../img/kitami_town-hall.jpeg);
 }
 .slider-item02 {
    background: url(../img/kunnneppu_town-hall.JPG);
