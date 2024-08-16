@@ -68,6 +68,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 100px;
 }
 
 .news-item {
@@ -81,7 +82,7 @@ header {
 .news-text {
    display: inline-block;
    vertical-align: top;
-   width: 300px;
+   width: 425px;
 }
 
 .news-img {
@@ -96,6 +97,34 @@ header {
    vertical-align: bottom;
 }
 
+.news-btn a {
+  display:block;
+  margin: auto;
+  width:200px;
+  height:auto;
+  padding:10px 10px;
+  border-radius:5px;
+  background-color:#146C94;
+  text-decoration: none;
+  text-align: center;
+  color:white;
+}
+
+.news-btn a:active {
+  background-color:#19A7CE;
+  color: white;
+}
+
+.hokkaido-link {
+   width: 800px
+}
+
+.hokkaido-link h2 {
+    margin-top: 30px;
+    color: #000000;
+    border-bottom: 3px solid #146C94;
+}
+}
 
 /* TOP スライドショー画像 */
 .top-img-container {
