@@ -124,6 +124,29 @@ header {
     color: #000000;
     border-bottom: 3px solid #146C94;
 }
+
+.footer {
+   background-color: #146C94;
+   color: #F6F1F1;
+   height: 150px;
+}
+
+.footer-logo img {
+   height: 45px;
+   margin: 7px 0px 0px 7px;
+}
+
+.contact {
+   margin-left: 7px;
+}
+
+.contact i {
+   margin-right: 4px;
+}
+
+.small {
+   font-size: 80%;
+   margin-left: 2px;
 }
 
 /* TOP スライドショー画像 */
