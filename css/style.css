@@ -128,7 +128,7 @@ header {
 .footer {
    background-color: #146C94;
    color: #F6F1F1;
-   height: 150px;
+   height: 220px;
 }
 
 .footer-logo img {
@@ -147,6 +147,22 @@ header {
 .small {
    font-size: 80%;
    margin-left: 2px;
+}
+
+.footer-menu-list {
+   text-align: right;
+}
+
+.footer-nav {
+   list-style: none;
+}
+
+.footer-nav a {
+   padding: 0 20px;
+   color: #F6F1F1;
+   display: block;
+   text-decoration: none;
+   transition: all 0.4s;
 }
 
 /* TOP スライドショー画像 */
