@@ -11,6 +11,10 @@ body {
    font-family: "Zen Kaku Gothic New",'Noto Sans JP', sans-serif;
 }
 
+li, a {
+   text-decoration: none;
+}
+
 header {
    display: flex;
    width: 100%;
@@ -128,20 +132,25 @@ header {
 .footer {
    background-color: #146C94;
    color: #F6F1F1;
-   height: 220px;
+   padding: 40px;
 }
 
 .footer-logo img {
-   height: 45px;
-   margin: 7px 0px 0px 7px;
+   height: 70px;
 }
 
 .contact {
    margin-left: 7px;
+   margin-top: 15px;
+   font-size: 20px;
 }
 
 .contact i {
    margin-right: 4px;
+}
+
+.footer-container {
+   text-align: center;
 }
 
 .small {
@@ -150,6 +159,12 @@ header {
 }
 
 .footer-menu-list {
+   display: flex;
+   margin-left: auto;
+   text-align: right;
+}
+
+.footer-menu-ul {
    text-align: right;
 }
 
@@ -158,11 +173,11 @@ header {
 }
 
 .footer-nav a {
-   padding: 0 20px;
    color: #F6F1F1;
    display: block;
    text-decoration: none;
    transition: all 0.4s;
+   padding-bottom: 10px;
 }
 
 /* TOP スライドショー画像 */
