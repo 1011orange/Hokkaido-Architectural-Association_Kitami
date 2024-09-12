@@ -20,7 +20,8 @@ ul, li {
 }
 
 header {
-   position: fixed;
+   position: sticky;
+   top: 0;
    z-index: 10;
    display: flex;
    width: 100%;
