@@ -64,9 +64,6 @@ header {
     margin: 0 10%;
 }
 
-.news {
-   width: 800px;
-}
 
 .news h2 {
     margin-top: 30px;
@@ -78,7 +75,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 100px;
+    margin: auto;
 }
 
 .news-item {
@@ -86,7 +83,7 @@ header {
     padding: 12px;
     border: 2px solid #AFD3E2;
     display: inline-block;
-    width: 700px;
+    width: 100%;
 }
 
 .news-text {
@@ -126,7 +123,13 @@ header {
 }
 
 .hokkaido-link {
-   width: 800px
+   width: 100%;
+}
+
+.hokkaido-link .links {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
 }
 
 .hokkaido-link h2 {
