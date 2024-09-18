@@ -144,6 +144,7 @@ header {
    text-align: center;
    vertical-align: top;
    margin: 0.5%;
+   border: 0;
 }
 
 .container-sub {
