@@ -126,11 +126,12 @@ header {
    width: 100%;
 }
 
-.hokkaido-link .links {
+/* .hokkaido-link .links {
    display: flex;
+   flex-direction: column;
    flex-wrap: wrap;
    justify-content: space-between;
-}
+} */
 
 .hokkaido-link h2 {
     margin-top: 30px;
@@ -139,12 +140,27 @@ header {
 }
 
 .hokkaido-link img {
-   display: inline-block;
    width: 33%;
    text-align: center;
    vertical-align: top;
    margin: 0.5%;
    border: 0;
+}
+
+.tokachi, 
+.kushiro,
+.nemuro,
+.nakashibetsu,
+.kitami {
+   filter: opacity(100%)
+}
+
+.abashiri ,
+.bihoro ,
+.monbetsu ,
+.engaru ,
+.shari {
+   filter: opacity(50%)
 }
 
 .container-sub {
