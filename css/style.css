@@ -22,7 +22,7 @@ ul, li {
 header {
    position: sticky;
    top: 0;
-   z-index: 10q;
+   z-index: 1000;
    display: flex;
    width: 100%;
    height: 65px;
@@ -103,7 +103,6 @@ header {
 .news-text {
    display: inline-block;
    vertical-align: top;
-   width: 425px;
 }
 
 .news-img {
@@ -112,8 +111,7 @@ header {
 }
 
 .news-item img {
-   width: 160px;
-   height: 120px;
+   width: 20%;
    vertical-align: bottom;
 }
 
@@ -296,4 +294,23 @@ header {
 .slick-next {
     right:2.5%;
     transform: rotate(45deg);
+}
+
+.about-main {
+   width: 80%;
+   margin: 0 10%;
+   display: flex;
+   flex-direction: column;
+}
+
+.cover  img {
+   height: 20vh;
+   width: 100%;
+   object-fit: cover;
+}
+
+.about-main h2 {
+   margin-top: 30px;
+   color: #000000;
+   border-bottom: 3px solid #146C94;
 }
