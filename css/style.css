@@ -48,7 +48,7 @@ header {
 
 .top-nav a {
    line-height: 65px;
-   padding: 0 20px;
+   padding: 0 15px;
    color: #F6F1F1;
    display: block;
    text-decoration: none;
@@ -321,7 +321,7 @@ header {
 
 
 /* headerのハンバーガー用CSS */
-@media (max-width: 1120px) {
+@media (max-width: 1050px) {
 
    .top-nav {
       display: none;
