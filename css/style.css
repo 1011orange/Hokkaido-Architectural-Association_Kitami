@@ -101,6 +101,7 @@ header {
 }
 
 .news-text {
+   color: black;
    display: inline-block;
    vertical-align: top;
 }
@@ -310,7 +311,7 @@ header {
 }
 
 .about-main h2 {
-   margin-top: 30px;
+   margin-top: 45px;
    color: #000000;
    border-bottom: 3px solid #146C94;
 }
