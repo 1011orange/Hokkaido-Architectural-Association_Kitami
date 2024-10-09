@@ -316,6 +316,19 @@ header {
    border-bottom: 3px solid #146C94;
 }
 
+.about-main h3 {
+   margin: 0;
+}
+
+.about-main h4 {
+   margin-top: 10px;
+   margin-bottom: 2px;
+}
+
+.about-main a {
+   margin-bottom: 15px;
+}
+
 .hamburger-container {
    display: none;
 }
