@@ -362,9 +362,9 @@ button {
 
 
 /* headerのハンバーガー用CSS */
-/* @media (max-width: 1050px) {
+@media (max-width: 1050px) {
 
-   .top-nav {
+   /* .top-nav {
       display: none;
    }
 
@@ -376,5 +376,18 @@ button {
       justify-content: center;
       align-items: center;
       color: white;
+   } */
+
+   .screen-notes {
+      background-color: #EA5550;
+      color: white;
+      text-align: center;
    }
-} */
+}
+
+@media (min-width: 1050px) {
+   .screen-notes {
+      display: none;
+      margin: 0px;
+   }
+}
