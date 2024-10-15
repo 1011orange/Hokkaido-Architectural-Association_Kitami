@@ -382,12 +382,16 @@ button {
       background-color: #EA5550;
       color: white;
       text-align: center;
+      margin-right: 0;
+   }
+
+   .screen-notes p {
+      margin: 0;
    }
 }
 
 @media (min-width: 1050px) {
    .screen-notes {
       display: none;
-      margin: 0px;
    }
 }
