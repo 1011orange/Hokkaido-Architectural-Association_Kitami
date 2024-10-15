@@ -385,6 +385,10 @@ button {
       margin-right: 0;
    }
 
+   .screen-notes h3 {
+      margin: 0;
+   }
+
    .screen-notes p {
       margin: 0;
    }
