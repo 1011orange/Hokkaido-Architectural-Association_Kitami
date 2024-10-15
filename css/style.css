@@ -62,14 +62,19 @@ header {
 
 .container {
    display: flex;
+   max-width: 1200px;
+   padding: 0 40px;
+   margin: auto;
+   justify-content: space-between;
 }
 
 .container-main {
-    width: 50%;
-    margin: 0 10%;
+    width: 100%;
+    max-width: 790px;
     display: flex;
     flex-direction: column;
     float: left;
+    text-align: left;
 }
 
 
@@ -151,12 +156,18 @@ header {
     border-bottom: 3px solid #146C94;
 }
 
+.links {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 3px 2%;
+}
+
+.links a {
+   width: 32%;
+}
+
 .links img {
-   width: 33%;
-   text-align: center;
-   vertical-align: top;
-   margin-top: 0.5%;
-   border: 0;
+   width: 100%;
 }
 
 .tokachi, 
@@ -176,13 +187,14 @@ header {
 }
 
 .container-sub {
-   width: 20%;
-   display: flex;
+   width: fit-content;
+   max-width: 300px;
    flex-direction: column;
 }
 
 .container-sub img {
    vertical-align: top;
+   text-align: right;
    margin-top: 35px;
    width: 100%;
 }
