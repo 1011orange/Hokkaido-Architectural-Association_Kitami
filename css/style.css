@@ -199,6 +199,11 @@ header {
    width: 100%;
 }
 
+.sticky {
+   position: sticky;
+   top: 70px;
+}
+
 .footer {
    background-color: #146C94;
    color: #F6F1F1;
@@ -374,7 +379,7 @@ button {
 
 
 /* headerのハンバーガー用CSS */
-@media (max-width: 1050px) {
+@media (max-width: 1065px) {
 
    /* .top-nav {
       display: none;
@@ -395,6 +400,7 @@ button {
       color: white;
       text-align: center;
       margin-right: 0;
+      padding: 10px;
    }
 
    .screen-notes h3 {
@@ -406,7 +412,7 @@ button {
    }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1065px) {
    .screen-notes {
       display: none;
    }
