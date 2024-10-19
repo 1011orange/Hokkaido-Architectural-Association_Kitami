@@ -47,7 +47,6 @@ header {
 }
 
 .container {
-   display: flex;
    max-width: 1200px;
    padding: 0 40px;
    margin: auto;
@@ -148,10 +147,6 @@ header {
    gap: 3px 2%;
 }
 
-.links a {
-   width: 32%;
-}
-
 .links img {
    width: 100%;
 }
@@ -170,13 +165,6 @@ header {
 .engaru ,
 .shari {
    filter: opacity(30%)
-}
-
-.container-sub {
-   width: fit-content;
-   max-width: 300px;
-   flex-direction: column;
-   padding-left: 30px;
 }
 
 .container-sub img {
@@ -220,7 +208,8 @@ header {
    text-align: center;
 }
 
-.small {
+.big-small,
+.mini-small {
    font-size: 80%;
    margin-left: 2px;
 }
@@ -284,6 +273,7 @@ header {
    background-size: cover;
    background-position: center;
 }
+
 .slick-prev,
 .slick-next {
     position: absolute;
@@ -296,10 +286,12 @@ header {
     height: 25px;
     width: 25px;
 }
+
 .slick-prev {
     left:2.5%;
     transform: rotate(-135deg);
 }
+
 .slick-next {
     right:2.5%;
     transform: rotate(45deg);
@@ -365,8 +357,13 @@ button {
  }
 
 
-/* headerのハンバーガー用CSS */
+/* タブレッド用CSS */
 @media (max-width: 1065px) {
+
+   #hamburger {
+      display: flex;
+      justify-content: space-between;
+   }
 
    /* .top-nav {
       display: none;
@@ -392,13 +389,13 @@ button {
       justify-content: space-between;
       width: 100%;
       height: 100%;
-      background-color: #146C94;
+      background-color: #F6F1F1;
    }
 
    .top-nav a {
       padding: 8px;
       font-size: 16px;
-      color: #F6F1F1;
+      color: black;
       display: block;
       text-align: center;
       text-decoration: none;
@@ -469,6 +466,14 @@ button {
    .screen-notes p {
       margin: 0;
    }
+
+   .links a {
+      width: 49%;
+   }
+
+   .big-small {
+      display: none;
+   }
 }
 
 @media (min-width: 1065px) {
@@ -502,5 +507,30 @@ button {
       display: flex;
       justify-content: space-between;
       margin-right: 10px;
+   }
+
+   .container {
+      display: flex;
+   }
+
+   .links a {
+      width: 32%;
+   }
+
+   .container-sub {
+      padding-left: 30px;
+      width: fit-content;
+      max-width: 300px;
+      flex-direction: column;
+   }
+
+   .sticky {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px 2%;
+   }
+
+   .mini-small {
+      display: none;
    }
 }
