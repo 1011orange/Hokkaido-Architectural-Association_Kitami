@@ -178,11 +178,6 @@ header {
    border: solid 0.5px #777777;
 }
 
-.sticky {
-   position: sticky;
-   top: 70px;
-}
-
 .footer {
    background-color: #146C94;
    color: #F6F1F1;
@@ -528,6 +523,8 @@ button {
       display: flex;
       flex-wrap: wrap;
       gap: 3px 2%;
+      position: sticky;
+      top: 70px;
    }
 
    .mini-small {
