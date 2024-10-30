@@ -31,6 +31,10 @@ header {
    color: black;
 }
 
+.title {
+   width: fit-content;
+}
+
 .title img {
    height: 55px;
    display: flex;
@@ -44,6 +48,10 @@ header {
 .top-nav a:hover {
    background-color: rgba(246, 241, 241, 0.9);
    color: #146c94;
+}
+
+.top-nav-contest i {
+   margin-left: 5px;
 }
 
 .container {
@@ -353,7 +361,7 @@ button {
 
 
 /* タブレッド用CSS */
-@media (max-width: 1065px) {
+@media (max-width: 1095px) {
 
    #hamburger {
       display: flex;
@@ -472,7 +480,7 @@ button {
    }
 }
 
-@media (min-width: 1065px) {
+@media (min-width: 1095px) {
 
    header {
       display: flex;
