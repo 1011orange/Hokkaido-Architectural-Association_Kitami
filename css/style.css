@@ -50,8 +50,9 @@ header {
    color: #146c94;
 }
 
-.top-nav-contest i {
+.square i {
    margin-left: 5px;
+   font-size: 14px;
 }
 
 .container {
@@ -114,12 +115,12 @@ header {
    vertical-align: bottom;
 }
 
-.news-btn a {
+.news-btn a,.pdf-btn a {
   display:block;
   margin: auto;
   width:200px;
   height:auto;
-  padding:10px 10px;
+  padding:10px;
   border-radius:5px;
   background-color:#146C94;
   text-decoration: none;
@@ -159,7 +160,7 @@ header {
    width: 100%;
 }
 
-.tokachi, 
+.tokachi,
 .kushiro,
 .nemuro,
 .nakashibetsu,
