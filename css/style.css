@@ -248,7 +248,7 @@ header {
 .slider {
    position: relative;
    z-index: 1;
-   height: 90vh; /* 画像の高さ */
+   height: 80vh; /* 画像の高さ */
    margin: 0;
    padding: 0;
 }
@@ -272,7 +272,7 @@ header {
 
 .slider-item {
    width: 100%;
-   height: 90vh;
+   height: 80vh;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -462,6 +462,7 @@ button {
       text-align: center;
       margin-right: 0;
       padding: 10px;
+      display: none;
    }
 
    .screen-notes h3 {
@@ -479,6 +480,7 @@ button {
    .big-small {
       display: none;
    }
+
 }
 
 @media (min-width: 1095px) {
