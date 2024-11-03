@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="css/style.css">
   <title>北海道建築士会 北見支部</title>
 </head>
@@ -15,28 +16,34 @@
     </div>
     <nav class="nav">
       <ul>
-        <li class="header-right"><a href="#">北見支部について</a></li>
-        <li class="header-right"><a href="#">支部の活動</a></li>
-        <li class="header-right"><a href="#">講習会・イベント</a></li>
-        <li class="header-right"><a href="#">大会報告</a></li>
-        <li class="header-right"><a href="#">青年部会</a></li>
-        <li class="header-right"><a href="#">女性部会</a></li>
-        <li class="header-right"><a href="#">その他</a></li>
+        <li class="top-nav"><a href="#">北見支部について</a></li>
+        <li class="top-nav"><a href="#">支部の活動</a></li>
+        <li class="top-nav"><a href="#">講習会・イベント</a></li>
+        <li class="top-nav"><a href="#">大会報告</a></li>
+        <li class="top-nav"><a href="#">青年部会</a></li>
+        <li class="top-nav"><a href="#">女性部会</a></li>
+        <li class="top-nav"><a href="#">その他</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="top-container">
-    <div class="top-img"><img src="img/kitami_town-hall.jpeg"></div>
-    <div class="top-small-img"><img src="img/kunnneppu_town-hall.JPG"></div>
-    <div class="top-small-img"><img src="img/oketo_town-hall.jpg"></div>
-    <div class="top-small-img"><img src="img/piason_memorial-hall.jpg"></div>
-    <div class="top-small-img"><img src="img/hakka_memorial-museum.jpg"></div>
-  </div>
+  <section class="top-img-container">
+    <ul class="slider">
+      <li class="slider-item slider-item01"></li>
+      <li class="slider-item slider-item02"></li>
+      <li class="slider-item slider-item03"></li>
+      <li class="slider-item slider-item04"></li>
+      <li class="slider-item slider-item05"></li>
+    </ul>
+  </section>
 
 
 
-
+  <!-- JS読み込み -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
