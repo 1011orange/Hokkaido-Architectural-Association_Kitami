@@ -1,12 +1,3 @@
-/* global $ */
-
-$(function () {
-	$('#hamburger').on('click', function () {
-		$('#hamburger').toggleClass("open");
-		$('#header-menu').slideToggle();
-	});
-});
-
 $('.slider').slick({
 	autoplay: true,  // 自動的に動き出すか
 	autoplaySpeed: 3000,  // 次のスライドに切り替わる待ち時間

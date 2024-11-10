@@ -8,7 +8,7 @@ body {
    padding: 0;
    margin: 0;
    background-color: #ffffff;
-   font-family: "Zen Kaku Gothic New",'Noto Sans JP', sans-serif;
+   font-family: "Zen Kaku Gothic New", 'Noto Sans JP', sans-serif;
 }
 
 a {
@@ -31,23 +31,14 @@ header {
    color: black;
 }
 
-.title {
+.navtext-container {
    width: fit-content;
 }
 
-.title img {
+.navtext-container img {
    height: 55px;
    display: flex;
    margin-left: 5px;
-}
-
-.top-nav {
-   list-style: none;
-}
-
-.top-nav a:hover {
-   background-color: rgba(246, 241, 241, 0.9);
-   color: #146c94;
 }
 
 .square i {
@@ -63,34 +54,34 @@ header {
 }
 
 .container-main {
-    width: 100%;
-    max-width: 790px;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    text-align: left;
+   width: 100%;
+   max-width: 790px;
+   display: flex;
+   flex-direction: column;
+   float: left;
+   text-align: left;
 }
 
 
 .news h2 {
-    margin-top: 30px;
-    color: #000000;
-    border-bottom: 3px solid #146C94;
+   margin-top: 30px;
+   color: #000000;
+   border-bottom: 3px solid #146C94;
 }
 
 .news-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: auto;
 }
 
 .news-item {
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 2px solid #AFD3E2;
-    display: inline-block;
-    width: 100%;
+   margin-bottom: 20px;
+   padding: 12px;
+   border: 2px solid #AFD3E2;
+   display: inline-block;
+   width: 100%;
 }
 
 .news-item a {
@@ -106,8 +97,8 @@ header {
 }
 
 .news-img {
-    float: right;
-    margin-left: auto;
+   float: right;
+   margin-left: auto;
 }
 
 .news-item img {
@@ -115,22 +106,22 @@ header {
    vertical-align: bottom;
 }
 
-.news-btn a,.pdf-btn a {
-  display:block;
-  margin: auto;
-  width:200px;
-  height:auto;
-  padding:10px;
-  border-radius:5px;
-  background-color:#146C94;
-  text-decoration: none;
-  text-align: center;
-  color:white;
+.news-btn a, .pdf-btn a {
+   display: block;
+   margin: auto;
+   width: 200px;
+   height: auto;
+   padding: 10px;
+   border-radius: 5px;
+   background-color: #146C94;
+   text-decoration: none;
+   text-align: center;
+   color: white;
 }
 
 .news-btn a:active {
-  background-color:#19A7CE;
-  color: white;
+   background-color: #19A7CE;
+   color: white;
 }
 
 .hokkaido-link {
@@ -145,9 +136,9 @@ header {
 } */
 
 .hokkaido-link h2 {
-    margin-top: 30px;
-    color: #000000;
-    border-bottom: 3px solid #146C94;
+   margin-top: 30px;
+   color: #000000;
+   border-bottom: 3px solid #146C94;
 }
 
 .links {
@@ -168,10 +159,10 @@ header {
    filter: opacity(100%)
 }
 
-.abashiri ,
-.bihoro ,
-.monbetsu ,
-.engaru ,
+.abashiri,
+.bihoro,
+.monbetsu,
+.engaru,
 .shari {
    filter: opacity(30%)
 }
@@ -248,7 +239,8 @@ header {
 .slider {
    position: relative;
    z-index: 1;
-   height: 80vh; /* 画像の高さ */
+   height: 50vh;
+   /* 画像の高さ */
    margin: 0;
    padding: 0;
 }
@@ -257,22 +249,26 @@ header {
 .slider-item01 {
    background: url(../img/kitami_town-hall.jpeg);
 }
+
 .slider-item02 {
    background: url(../img/kunnneppu_town-hall.JPG);
 }
+
 .slider-item03 {
    background: url(../img/oketo_town-hall.jpg);
 }
+
 .slider-item04 {
    background: url(../img/piason_memorial-hall.jpg);
 }
+
 .slider-item05 {
    background: url(../img/hakka_memorial-museum.jpg);
 }
 
 .slider-item {
    width: 100%;
-   height: 80vh;
+   height: 50vh;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -280,25 +276,25 @@ header {
 
 .slick-prev,
 .slick-next {
-    position: absolute;
-	z-index: 3;
-    top: 42%;
-    cursor: pointer;
-    outline: none;
-    border-top: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-    height: 25px;
-    width: 25px;
+   position: absolute;
+   z-index: 3;
+   top: 42%;
+   cursor: pointer;
+   outline: none;
+   border-top: 2px solid #ccc;
+   border-right: 2px solid #ccc;
+   height: 25px;
+   width: 25px;
 }
 
 .slick-prev {
-    left:2.5%;
-    transform: rotate(-135deg);
+   left: 2.5%;
+   transform: rotate(-135deg);
 }
 
 .slick-next {
-    right:2.5%;
-    transform: rotate(45deg);
+   right: 2.5%;
+   transform: rotate(45deg);
 }
 
 .about-main {
@@ -308,7 +304,7 @@ header {
    flex-direction: column;
 }
 
-.cover  img {
+.cover img {
    height: 40vh;
    width: 100%;
    object-fit: cover;
@@ -353,166 +349,151 @@ button {
    opacity: 0;
    visibility: hidden;
    transition: .3s;
- }
- /* クラス付与時の指定 */
- .is-active {
+}
+
+/* クラス付与時の指定 */
+.is-active {
    opacity: 1;
    visibility: visible;
- }
+}
 
 
 /* タブレッド用CSS */
 @media (max-width: 1095px) {
 
-   #hamburger {
-      display: flex;
-      justify-content: space-between;
+   /* ハンバーガー用CSS */
+   :root {
+      --background-navbar: rgba(246, 241, 241, 1);
    }
 
-   /* .top-nav {
+   .menu {
+      list-style: none;
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 0;
+      margin-top: 52px;
+      padding: 0 0 10px 0;
+      clear: both;
+      background: var(--background-navbar);
+      transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+      transform: scale(1, 0);
+      transform-origin: top;
+   }
+
+   .menu-btn:checked~.menu {
+      transform: scale(1, 1);
+      transform-origin: top;
+      transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+   }
+
+   .menu a {
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 2px;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: black;
+      opacity: 0;
+      transition: 0.5s;
+   }
+
+   .menu li {
+      border-top: 1px solid rgb(75, 75, 75);
+      text-align: center;
+      padding: 15px 0;
+      margin: 0 65px;
+      opacity: 0;
+      transition: 0.5s;
+   }
+
+   .menu-btn:checked~.menu a,
+   .menu-btn:checked~.menu li {
+      opacity: 1;
+      transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
+   }
+
+   .menu-btn {
       display: none;
    }
 
-   .hamburger-container {
-      display: block;
-   }
    .menu-icon {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-   } */
-
-   .nav ul {
-      /* 最初はナビゲーションボタンは非表示 */
-      display: none;
-   }
-
-   .top-ul {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      height: 100%;
-      background-color: #F6F1F1;
-      padding: 0;
-   }
-
-   .top-nav a {
-      padding: 8px;
-      font-size: 16px;
-      color: black;
-      display: block;
-      text-align: center;
-      text-decoration: none;
-   }
-
-   .hamburger {
-      position: absolute;
-      right: 32px;
+      justify-content: flex-end;
+      position: relative;
       cursor: pointer;
-      width: 32px;
-      height: 24px;
-      z-index: 2000;
+      padding: 30px 30px;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    }
 
-   .hamburger span {
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: #F6F1F1;
-      transition: all 0.3s;
-      z-index: 2000;
-   }
-
-   .hamburger span:nth-of-type(1) {
-      /*上の線の位置*/
-      top: 4px;
-   }
-
-   .hamburger span:nth-of-type(2) {
-      /*真ん中の線の位置*/
-      top: 12px;
-   }
-
-   .hamburger span:nth-of-type(3) {
-      /*下の線の位置*/
-      top: 20px;
-   }
-
-   .hamburger.open span:nth-of-type(1) {
-      /*openのとき、上の線を右斜めにする*/
-      top: 10px;
-      transform: translateY(6px) rotate(-33deg);
-   }
-
-   .hamburger.open span:nth-of-type(2) {
-      /*真ん中の線を消す*/
-      opacity: 0;
-   }
-
-   .hamburger.open span:nth-of-type(3) {
-      /*下の線を左斜めにする*/
-      top: 22px;
-      transform: translateY(-6px) rotate(33deg);
-   }
-
-   .screen-notes {
-      background-color: #EA5550;
-      color: white;
-      text-align: center;
-      margin-right: 0;
-      padding: 10px;
-   }
-
-   .screen-notes h3 {
-      margin: 0;
-   }
-
-   .screen-notes p {
-      margin: 0;
-   }
-
-   .links a {
-      width: 49%;
-   }
-
-   .big-small {
-      display: none;
-   }
-
-}
-
-@media (min-width: 1095px) {
-
-   header {
-      display: flex;
-   }
-
-   .screen-notes {
-      display: none;
-   }
-
-   .top-nav a {
-      line-height: 65px;
-      padding: 0 15px;
-      color: #F6F1F1;
+   .navicon {
+      background: #ddd;
       display: block;
-      text-decoration: none;
-      transition: all 0.4s;
+      height: 3px;
+      width: 26px;
+      position: relative;
+      transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
    }
 
-   .hamburger {
-      display: none;
+   .navicon:before,
+   .navicon:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: #ddd;
+      transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
    }
 
-   .hamburger-container {
-      display: none;
+   .navicon:before {
+      top: 9px;
    }
 
-   .top-ul {
+   .navicon:after {
+      bottom: 9px;
+   }
+
+   .menu {
+      padding: 60px 0 0 0;
+      margin: 65px 0 0 0;
+      height: 100vh;
+   }
+
+   .menu-btn:checked~.menu-icon .navicon:before {
+      transform: rotate(-45deg);
+   }
+
+   .menu-btn:checked~.menu-icon .navicon:after {
+      transform: rotate(45deg);
+   }
+
+   .menu-btn:checked~.menu-icon:not(.steps) .navicon:before {
+      top: 0;
+   }
+
+   .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+      bottom: 0;
+   }
+
+   .menu-btn:checked~.menu-icon .navicon {
+      background: rgba(0, 0, 0, 0);
+      transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+   }
+
+   .navtext-container {
+      width: 100%;
+      position: absolute;
+      box-sizing: border-box;
       display: flex;
-      justify-content: space-between;
-      margin-right: 10px;
+      align-items: center;
+   }
+
+   .navtext-container img {
+      margin: 5px 5px;
+      height: 55px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
    }
 
    .container {
@@ -537,8 +518,87 @@ button {
       position: sticky;
       top: 70px;
    }
+}
+
+@media (max-width: 900px) {
+   .links a {
+      width: 49%;
+   }
 
    .mini-small {
       display: none;
+   }
+}
+
+@media (max-width: 768px) {
+   .links a {
+      width: 100%;
+   }
+
+   .big-small {
+      display: none;
+   }
+}
+
+@media (max-width: 425px) {
+
+}
+
+/* ハンバーガーサイズ変更用CSS */
+@media (min-width: 1095px) {
+
+   header {
+      display: flex;
+   }
+
+   .header input,
+   label {
+      display: none;
+   }
+
+   .menu {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .top-nav {
+      list-style: none;
+   }
+
+   .top-nav a:hover {
+      background-color: rgba(246, 241, 241, 0.9);
+      color: #146c94;
+   }
+
+   .top-nav a {
+      line-height: 65px;
+      padding: 0 15px;
+      color: #F6F1F1;
+      display: block;
+      text-decoration: none;
+      transition: all 0.4s;
+   }
+
+   .container {
+      display: flex;
+   }
+
+   .links a {
+      width: 32%;
+   }
+
+   .container-sub {
+      padding-left: 30px;
+      width: fit-content;
+      max-width: 300px;
+      flex-direction: column;
+   }
+
+   .sticky {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px 2%;
+      position: sticky;
+      top: 70px;
    }
 }
