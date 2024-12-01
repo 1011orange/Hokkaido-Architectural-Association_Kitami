@@ -536,7 +536,10 @@ button {
 
 @media (max-width: 768px) {
    .links a {
-      width: 100%;
+      width: 49%;
+   }
+
+   .container-sub {
    }
 
    .big-small {
