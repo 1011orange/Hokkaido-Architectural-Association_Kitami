@@ -304,7 +304,7 @@ header {
 }
 
 .cover img {
-   height: 40vh;
+   height: 350px;
    width: 100%;
    object-fit: cover;
 }
@@ -326,6 +326,11 @@ header {
 
 .about-main a {
    margin-bottom: 15px;
+}
+
+
+.pdf-btn-list a {
+   justify-content: center;
 }
 
 /* トップへのスクロールボタンの指定 */
