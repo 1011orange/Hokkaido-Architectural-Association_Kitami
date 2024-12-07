@@ -48,7 +48,7 @@ header {
 
 .container {
    max-width: 1200px;
-   padding: 0 40px;
+   padding: 0 40px 20px 40px;
    margin: auto;
    justify-content: space-between;
 }
@@ -182,7 +182,6 @@ header {
    background-color: #146C94;
    color: #F6F1F1;
    padding: 40px;
-   margin-top: 20px;
 }
 
 .footer-logo img {
@@ -502,6 +501,8 @@ button {
 
    .container {
       display: flex;
+      flex-direction: column;
+      align-items: center;
    }
 
    .links a {
@@ -509,7 +510,6 @@ button {
    }
 
    .container-sub {
-      padding-left: 30px;
       width: fit-content;
       max-width: 300px;
       flex-direction: column;
@@ -534,21 +534,18 @@ button {
    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 530px) {
    .links a {
-      width: 49%;
-   }
-
-   .container-sub {
+      width: 100%;
    }
 
    .big-small {
       display: none;
    }
-}
 
-@media (max-width: 425px) {
-
+   .mini-small {
+      display: block;
+   }
 }
 
 /* ハンバーガーサイズ変更用CSS */
