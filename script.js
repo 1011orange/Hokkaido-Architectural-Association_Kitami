@@ -12,6 +12,22 @@ $('.slider').slick({
 	pauseOnFocus: false,  // フォーカスで一時停止
 	pauseOnHover: false,  // マウスホバーで一時停止
 	pauseOnDotsHover: false,
+	centerMode: true,
+	centerPadding: '20%',
+	responsive: [
+		{
+			breakpoint: 1350,  // ブレイクポイントが1350px
+			settings: {
+				centerPadding: '10%',
+			}
+		},
+		{
+			breakpoint: 1095,  // ブレイクポイントが768px
+			settings: {
+				centerPadding: '0',
+		}
+		}
+	]
 });
 
 // スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合

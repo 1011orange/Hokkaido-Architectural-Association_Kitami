@@ -2,7 +2,10 @@
    box-sizing: border-box;
 }
 
-/* html全体のレイアウト */
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    height: 100%;
    padding: 0;
@@ -20,6 +23,7 @@ ul, li {
 }
 
 header {
+   display: flex;
    position: sticky;
    top: 0;
    z-index: 1000;
@@ -237,8 +241,6 @@ header {
 .slider {
    position: relative;
    z-index: 1;
-   height: 50vh;
-   /* 画像の高さ */
    margin: 0;
    padding: 0;
 }
@@ -266,7 +268,6 @@ header {
 
 .slider-item {
    width: 100%;
-   height: 50vh;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -303,7 +304,6 @@ header {
 }
 
 .cover img {
-   height: 350px;
    width: 100%;
    object-fit: cover;
 }
@@ -360,6 +360,27 @@ button {
    visibility: visible;
 }
 
+@media (min-width: 1095px) {
+   .mini-small {
+      display: none;
+   }
+
+   .cover img {
+      height: 30vh;
+   }
+
+   .slider {
+      height: 65vh;
+   }
+
+   .slider-item {
+      height: 65vh;
+   }
+
+   .slick-slide {
+      margin: 0.5vw 1vw 0 1vw;
+   }
+}
 
 /* タブレッド用CSS */
 @media (max-width: 1095px) {
@@ -422,14 +443,21 @@ button {
 
    .menu-icon {
       display: flex;
-      justify-content: flex-end;
-      position: relative;
+      height: 100%;
       cursor: pointer;
-      padding: 30px 30px;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      padding: 20px;
+   }
+
+   .cover-1 {
+      display: flex;
+      width: fit-content;
+      margin: 0 20px 0 auto;
+      height: 100%;
+      cursor: pointer;
    }
 
    .navicon {
+      margin: auto 0;
       background: #ddd;
       display: block;
       height: 3px;
@@ -485,18 +513,19 @@ button {
    }
 
    .navtext-container {
-      width: 100%;
-      position: absolute;
       box-sizing: border-box;
-      display: flex;
       align-items: center;
    }
 
    .navtext-container img {
       margin: 5px 5px;
       height: 55px;
-      text-transform: uppercase;
       letter-spacing: 4px;
+   }
+
+   .top-nav a {
+      display: block;
+      width: 100%;
    }
 
    .container {
@@ -522,6 +551,22 @@ button {
       position: sticky;
       top: 70px;
    }
+
+   .mini-small {
+      display: none;
+   }
+
+   .cover img {
+      height: 30vh;
+   }
+
+   .slider {
+      height: 50vh;
+   }
+
+   .slider-item {
+      height: 50vh;
+   }
 }
 
 @media (max-width: 900px) {
@@ -531,6 +576,10 @@ button {
 
    .mini-small {
       display: none;
+   }
+
+   .cover img {
+      height: 25vh;
    }
 }
 
@@ -546,15 +595,22 @@ button {
    .mini-small {
       display: block;
    }
+
+   .cover img {
+      height: 45vh;
+   }
+
+   .slider {
+      height: 40vh;
+   }
+
+   .slider-item {
+      height: 40vh;
+   }
 }
 
 /* ハンバーガーサイズ変更用CSS */
 @media (min-width: 1095px) {
-
-   header {
-      display: flex;
-   }
-
    .header input,
    label {
       display: none;
