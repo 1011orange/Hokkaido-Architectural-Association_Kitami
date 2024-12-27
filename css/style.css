@@ -273,25 +273,6 @@ header {
    background-position: center;
 }
 
-.slider-in-white {
-   height: auto;
-   color: rgb(255,255,255,0.5);
-   margin: 10px;
-   font-size: 50px;
-   display: flex;
-   font-weight: bold;
-   -webkit-text-stroke: 0.2px rgb(0,0,0,0.5);
-}
-
-.slider-in-black {
-   height: auto;
-   color: black;
-   margin: 10px;
-   font-size: 50px;
-   display: flex;
-   font-weight: bold;
-}
-
 .slick-prev,
 .slick-next {
    position: absolute;
