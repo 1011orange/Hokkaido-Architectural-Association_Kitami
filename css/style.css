@@ -309,27 +309,30 @@ header {
 }
 
 .about-main h2 {
-   margin-top: 45px;
+   margin: 0;
    color: #000000;
    border-bottom: 3px solid #146C94;
 }
 
-.about-main h3 {
-   margin: 0;
-}
-
-.about-main h4 {
-   margin-top: 10px;
-   margin-bottom: 2px;
-}
-
-.about-main a {
-   margin-bottom: 15px;
-}
-
-
 .pdf-btn-list a {
    justify-content: center;
+}
+
+.activity p {
+   padding: 0 18px;
+}
+
+.reference {
+   display: inline-block;
+   color: white;
+   background-color: #146C94;
+   padding: 6px;
+   margin: 0;
+   border-radius: 5px;
+}
+
+.reference .fa-file-pdf {
+   margin-right: 5px;
 }
 
 /* トップへのスクロールボタンの指定 */
@@ -611,6 +614,7 @@ button {
 
 /* ハンバーガーサイズ変更用CSS */
 @media (min-width: 1095px) {
+
    .header input,
    label {
       display: none;
