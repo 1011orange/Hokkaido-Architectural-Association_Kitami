@@ -110,6 +110,10 @@ header {
    vertical-align: bottom;
 }
 
+.pdf-btn-line {
+   margin: 10px 0;
+}
+
 .news-btn a, .pdf-btn a {
    display: block;
    margin: auto;
@@ -314,11 +318,32 @@ header {
    border-bottom: 3px solid #146C94;
 }
 
+.about-main .element {
+   margin: 18px 0;
+}
+
+.pages-container {
+   margin: 25px 0;
+}
+
 .pdf-btn-list a {
    justify-content: center;
 }
 
+.about p, .workshop p {
+   margin: 0;
+}
+
+.activity h3 {
+   margin: 15px 0;
+}
+
+.activity h4, .workshop h4 {
+   margin: 0;
+}
+
 .activity p {
+   margin: 0;
    padding: 0 18px;
 }
 
