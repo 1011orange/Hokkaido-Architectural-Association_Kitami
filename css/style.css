@@ -100,6 +100,19 @@ header {
    vertical-align: top;
 }
 
+.news-date, .news-title {
+   display: inline;
+   font-weight: bold;
+}
+
+.news-date {
+   margin-right: 10px;
+}
+
+.news-sentence {
+   padding-left: 80px;
+}
+
 .news-img {
    float: right;
    margin-left: auto;
@@ -351,9 +364,13 @@ header {
    display: inline-block;
    color: white;
    background-color: #146C94;
+   margin-left: 14px;
    padding: 6px;
-   margin: 0;
    border-radius: 5px;
+}
+
+.reference-activity {
+   margin: 0;
 }
 
 .reference .fa-file-pdf {
