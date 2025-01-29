@@ -626,6 +626,15 @@ button {
    .cover img {
       height: 25vh;
    }
+
+   .news-date, .news-title {
+      display: block;
+      margin: 0;
+   }
+
+   .news-sentence {
+      padding-left: 0;
+   }
 }
 
 @media (max-width: 530px) {
