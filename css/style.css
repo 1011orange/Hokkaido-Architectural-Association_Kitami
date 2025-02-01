@@ -335,6 +335,19 @@ header {
    margin: 18px 0;
 }
 
+.about-main .element p {
+   padding-left: 15px;
+}
+
+.about-main .element a {
+   text-decoration: underline;
+   color: #040bfa
+}
+
+.about-main .element i {
+   padding-left: 4px;
+}
+
 .pages-container {
    margin: 25px 0;
 }
